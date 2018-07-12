@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
+import { HttpClientModule } from '@angular/common/http'; 
 
 import {RegisterService} from './register/register.service';
 import { AppRoutingModule } from '../app-routing.module';
@@ -12,6 +13,8 @@ import { LoginComponent } from './login/login.component';
 
 import { FormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+import { VendorRegisterComponent } from './vendor-register/vendor-register.component';
+import { VendorLoginComponent } from './vendor-login/vendor-login.component';
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent },
@@ -23,9 +26,12 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    VendorRegisterComponent,
+    VendorLoginComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     FormsModule,
     AppRoutingModule,
