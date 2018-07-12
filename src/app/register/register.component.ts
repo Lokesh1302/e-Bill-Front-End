@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 import { RegisterService } from '../register/register.service';
 import { NgForm } from '@angular/forms';
 
@@ -20,5 +21,5 @@ export class RegisterComponent implements OnInit {
   ngOnInit() {
   }
   
-  
+
 }
