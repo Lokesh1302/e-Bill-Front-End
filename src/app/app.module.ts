@@ -8,7 +8,8 @@ import {RegisterService} from './register/register.service';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule , Routes } from '@angular/router';
 
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { FormsModule } from '@angular/forms';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent }
@@ -22,6 +23,7 @@ const routes: Routes = [
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
     RouterModule.forRoot(routes) 
   ],
@@ -31,3 +33,5 @@ const routes: Routes = [
 
 
 export class AppModule { }
+
+platformBrowserDynamic().bootstrapModule(AppModule)
