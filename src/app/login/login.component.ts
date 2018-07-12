@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-
+import { NgForm } from '@angular/forms';
+import { LoginService } from './login.service';
 
 @Component({
   selector: 'app-login',
@@ -9,11 +10,15 @@ import {Router} from "@angular/router";
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private loginService:LoginService, private router: Router) { }
 
   ngOnInit() {
   }
 
+  loginCustomer(form : NgForm) {
+    this.loginService.validateCustomer(form.value);
+  }
+  
   registerCustomer()
   {
     console.log("Registering Customer!!");
