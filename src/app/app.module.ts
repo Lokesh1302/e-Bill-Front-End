@@ -7,18 +7,19 @@ import { RegisterComponent } from './register/register.component';
 import {RegisterService} from './register/register.service';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule , Routes } from '@angular/router';
-
-import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-  { path: 'register', component: RegisterComponent }
+  { path: 'register', component: RegisterComponent },
+  { path: 'login' , component: LoginComponent }
 ];
 
 @NgModule({
   
   declarations: [
     AppComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
