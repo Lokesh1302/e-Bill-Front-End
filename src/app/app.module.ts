@@ -7,13 +7,10 @@ import { RegisterComponent } from './register/register.component';
 import {RegisterService} from './register/register.service';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule , Routes } from '@angular/router';
-<<<<<<< HEAD
 import { LoginComponent } from './login/login.component';
-=======
 
 import { FormsModule } from '@angular/forms';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
->>>>>>> 977e8eac69bfafa6f205398ddcbda6d2c3e604cc
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent },
