@@ -7,19 +7,22 @@ import { RegisterComponent } from './register/register.component';
 import {RegisterService} from './register/register.service';
 import { AppRoutingModule } from '../app-routing.module';
 import { RouterModule , Routes } from '@angular/router';
+import { LoginComponent } from './login/login.component'
 
 import { FormsModule } from '@angular/forms';
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic'
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 const routes: Routes = [
-  { path: 'register', component: RegisterComponent }
+  { path: 'register', component: RegisterComponent },
+  { path : 'login' , component : LoginComponent}
 ];
 
 @NgModule({
   
   declarations: [
     AppComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
