@@ -18,7 +18,9 @@ import { VendorLoginComponent } from './vendor-login/vendor-login.component';
 
 const routes: Routes = [
   { path: 'register', component: RegisterComponent },
-  { path: 'login' , component: LoginComponent }
+  { path: 'login' , component: LoginComponent },
+  { path: 'registerVendor' , component: VendorRegisterComponent },
+  { path: 'loginVendor' , component: VendorLoginComponent }
 ];
 
 @NgModule({
