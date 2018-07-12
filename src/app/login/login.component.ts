@@ -22,6 +22,6 @@ export class LoginComponent implements OnInit {
   registerCustomer()
   {
     console.log("Registering Customer!!");
-    this.router.navigate(['/register']);
+    this.router.navigate(['/loginVendor']);
   }
 }
